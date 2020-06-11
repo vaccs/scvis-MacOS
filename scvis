@@ -1,0 +1,4 @@
+#!/bin/bash
+export OS=`uname`
+export SCVIS=`dirname $0`
+java --module-path $SCVIS/javafx-sdk-11.0.2-$OS/lib --add-modules javafx.controls -jar $SCVIS/scvis.jar $*
